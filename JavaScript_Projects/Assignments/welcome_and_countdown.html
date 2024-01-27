@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        div {
+            color: rgb(26, 20, 20);
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: white;
+        }
+    </style>
+    <script>
+        // Get the current date
+        var date = new Date();
+
+        // Retrieve various date components
+        var day = date.getDay();
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var month = date.getMonth();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var hour = date.getHours();
+        var year = date.getFullYear();
+        var day2 = date.getDate();
+
+        // Greeting based on the time of the day
+        var greet;
+        if (hour < 12) {
+            greet = "Good Morning";
+        } else if (hour >= 12 && hour < 16) {
+            greet = "Good Afternoon";
+        } else if (hour >= 16 && hour < 20) {
+            greet = "Good Evening";
+        } else {
+            greet = "Good Night";
+        }
+
+        // Calculate the number of days left till the end of the year
+        var start = new Date(year, 11, 31); // December 31st of the current year
+        var remainingDays = Math.floor((start - date) / (1000 * 60 * 60 * 24));
+
+        // Display the information on the page
+        document.write(`<div>Today is ${days[day]} ${day2} ${months[month]} ${year}, Welcome, and ${greet} to you. <br> Number of days left till the end of the year are: ${remainingDays}</div>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

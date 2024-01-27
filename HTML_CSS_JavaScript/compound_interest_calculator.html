@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+
+    <link rel="stylesheet" href="./css/compound_interest.css">
+    <script>
+        // Function to calculate Compound Interest
+        function calculateCI() {
+            // Retrieve user input values
+            var principal = parseInt(document.getElementById("principal").value);
+            var rateOfInterest = parseInt(document.getElementById("ROI").value);
+            var period = parseInt(document.getElementById("Period").value);
+
+            // Calculate Compound Interest
+            var compoundInterest = (principal * Math.pow((1 + (rateOfInterest / 100)), period)) - principal;
+
+            // Display the result in the readonly input field
+            document.getElementById("CI").value = compoundInterest.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <header>Calculate Compound Interest</header>
+
+    <table>
+        <tr>
+            <td>Principal Amount : </td>
+            <td><input type="text" name="principal" id="principal" required></td>
+        </tr>
+
+        <tr>
+            <td>Rate of Interest : </td>
+            <td><input type="text" name="ROI" id="ROI" required></td>
+        </tr>
+
+        <tr>
+            <td>Period : </td>
+            <td><input type="text" name="Period" id="Period" required></td>
+        </tr>
+
+        <tr>
+            <td><br><button type="button" name="btn" id="btn" onclick="calculateCI()">Calculate Interest</button><br><br></td>
+        </tr>
+
+        <tr>
+            <td>Compound Interest : </td>
+            <td><input type="text" name="CI" id="CI" readonly></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Table</title> <!-- Suggested name for the HTML page -->
+</head>
+<body>
+    <script>
+        // Employee data array
+        var emps = [
+            {empId:1, empName:"Adarsh", salary:55000},
+            {empId:2, empName:"Shantanu", salary:95000},
+            {empId:3, empName:"Anup", salary:99999},
+            {empId:4, empName:"Akshay", salary:65000}
+        ];
+
+        // Logging employee data to the console
+        console.log(emps);
+
+        // Generating an HTML table with employee data
+        var str = "<table border=2><tr><th>EmpID</th><th>EmpName</th><th>EmpSalary</th></tr>";
+
+        for (var ob of emps) {
+            // Adding each employee's data to the table
+            str += `<tr><td>${ob.empId}</td><td>${ob.empName}</td><td>${ob.salary}</td></tr>`;
+        }
+
+        // Closing the table tag
+        str += "</table>";
+
+        // Displaying the table on the page
+        document.write(str);
+    </script>
+</body>
+</html>

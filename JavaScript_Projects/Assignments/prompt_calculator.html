@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/calculator.css">
+
+    <script>
+      function calculator() {
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+
+        var symbol = prompt(
+          "Enter the operator to perform the following operation (+,-,*,/)"
+        );
+
+        switch (symbol) {
+          case "+":
+            var res = n1 + n2;
+            break;
+
+          case "-":
+            res = n1 - n2;
+            break;
+
+          case "*":
+            res = n1 * n2;
+            break;
+
+          case "/":
+            res = n1 / n2;
+            break;
+        }
+
+        document.getElementById("result").value = res;
+        // document.getElementById("result2").innerHTML = res;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="calculator-box">
+      <label for="num1">Enter 1st Number</label> &nbsp;
+      <input type="text" name="num1" id="num1" autofocus />
+      <br />
+
+      <label for="num2">Enter 2nd Number</label>
+      <input type="text" name="num2" id="num2" />
+      <br />
+
+      <button type="button" name="btn" id="btn" onclick="calculator()">
+        Calculate Result
+      </button>
+
+      <br /><br />
+
+      <label for="result">Result</label>
+      <input type="text" name="result" id="result" readonly /> <br />
+      <span id="result2"></span>
+    </div>
+  </body>
+</html>

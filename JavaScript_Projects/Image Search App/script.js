@@ -1,5 +1,6 @@
 const accessKey="ByO5uGYz0N3KS8llA7JqN_vhwAeFkhDrf-U_NS-BilM";
 
+
 const formEl = document.querySelector("form");
 const inputEl= document.getElementById("search-input");
 const searchResults = document.querySelector(".search-results");

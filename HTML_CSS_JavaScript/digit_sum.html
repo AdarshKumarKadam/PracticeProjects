@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata section -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digit Sum Calculator</title>
+    <link rel="stylesheet" href="./css/digit_sum.css">
+</head>
+
+<body>
+    <!-- JavaScript section to calculate the sum of digits -->
+    <script>
+        // Prompt user to enter a 5-digit number
+        var num = parseInt(prompt("Enter a 5-digit number"));
+        var originalNum = num;
+        // Variables to store sum and remainder
+        var sum = 0;
+        var rem;
+
+        // Loop to calculate the sum of digits
+        while (num != 0) {
+            rem = num % 10;
+            sum = sum + rem;
+            num = Math.floor(num / 10);
+        }
+
+        // Display the result on the page
+        document.write("<p>Addition of digits of "+ originalNum + " is " + sum + "</p>");
+    </script>
+</body>
+
+</html>

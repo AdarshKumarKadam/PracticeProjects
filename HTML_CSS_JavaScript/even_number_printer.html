@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Number Printer</title>
+    <link rel="stylesheet" href="./css/even_nums.css">
+    <script>
+        function evenNum() {
+            var num = parseInt(document.getElementById("num").value);
+            var resultDiv = document.getElementById("result");
+
+            while (num !== 0) {
+                if (num % 2 === 0) {
+                    resultDiv.innerHTML += "<br>" + num;
+                }
+                num--;
+            }
+
+            document.getElementById("num").value = "";
+            document.getElementById("num").focus();
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="num">Enter number</label>
+        <input type="text" name="num" id="num" required autofocus>
+        <button type="button" id="btn" onclick="evenNum()">Print</button><br><br>
+        <label>Even Numbers Up to Entered Number</label>
+
+        <div id="result"></div>
+    </form>
+</body>
+
+</html>

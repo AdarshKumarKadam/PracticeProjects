@@ -21,7 +21,7 @@ const Contact = () => {
             message: data.message,
         };
         try {
-            const response = await axios.post("https://getform.io/f/zaxdkmva", userInfo);
+            const response = await axios.post("https://getform.io/f/nbdoeyma", userInfo);
             if (response.status === 200) {
                 toast.success('Message sent successfully!');
                 reset();

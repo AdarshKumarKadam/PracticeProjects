@@ -1,20 +1,20 @@
 import { useState } from "react";
-// import pic from "../assets/adarshSuite.jpg";
-import devPic from "../assets/DevPic.avif"
+import devPic from "../assets/DevPic.avif";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
-
-
-
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-  const navItems =[{id:1,text:"Home"},
-    {id:2,text:"About"},
-    {id:3,text:"Portfolio"},
-    {id:4,text:"Experience"},
-    {id:5,text:"Contact"},
-  ]
+  const navItems = [
+    { id: 1, text: "Home" },
+    { id: 2, text: "About" },
+    { id: 3, text: "Portfolio" },
+    { id: 4, text: "Experience" },
+    { id: 5, text: "Contact" },
+  ];
+
+  const navbarHeight = 68; 
 
   return (
     <>
@@ -29,10 +29,13 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <ul className="md:flex space-x-8 text-sm hidden">
-            {navItems.map(({ id, text }) => (
-                <li  className="hover:scale-105 duration-200 cursor-pointer text-lg"  key={id}>{text}</li>
+              {navItems.map(({ id, text }) => (
+                <li className="hover:scale-105 duration-200 cursor-pointer text-lg" key={id}>
+                  <Link to={text.toLowerCase()} smooth={true} duration={500} offset={-navbarHeight}>
+                    {text}
+                  </Link>
+                </li>
               ))}
-
             </ul>
             <div className="md:hidden cursor-pointer text-2xl" onClick={() => setMenu(!menu)}>
               {menu ? <IoMdClose /> : <AiOutlineMenu />}
@@ -42,12 +45,15 @@ const Navbar = () => {
 
         {/* Mobile Navbar */}
         {menu && (
-          <div className="md:hidden">
-            <ul className="space-y-4 text-sm flex flex-col items-center justify-center mt-2">
-            {navItems.map(({ id, text }) => (
-                <li className="hover:scale-105 duration-200 cursor-pointer text-xl" key={id}>{text}</li>
+          <div className="md:hidden bg-white">
+            <ul className="space-y-4 text-sm flex flex-col items-center justify-center ">
+              {navItems.map(({ id, text }) => (
+                <li className="hover:scale-105 duration-200 cursor-pointer text-xl" key={id}>
+                  <Link to={text.toLowerCase()} onClick={() => setMenu(!menu)} smooth={true} duration={500} offset={-navbarHeight} activeClass="active">
+                    {text}
+                  </Link>
+                </li>
               ))}
-
             </ul>
           </div>
         )}

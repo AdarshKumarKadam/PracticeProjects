@@ -1,8 +1,6 @@
-import EduCard from "..//../src/components/cards/EduCard";
-// import cdac from "../assets/C-DAC_logo"
+import EduCard from "../../src/components/cards/EduCard";
 
 const About = () => {
-
   const cardData = [
     {
       icon: "📚",
@@ -18,13 +16,12 @@ const About = () => {
       year: 2021,
       score: 8.9
     }
-    // Add more card data here as needed
   ];
   return (
-    <>  <div className="max-w-screen-2xl container my-4  md:mb-20 mx-auto px-4 md:px-20 overflow-hidden">
-      <div className="">About</div>
-      <div className=" w-full pt-12 p-4">
-        <div className="grid gap-14 md:grid-cols-2 md:gap-15 ">
+    <div id="about" className="max-w-screen-2xl container my-4  md:my-30 md:mb-20 mx-auto px-4 md:px-20 overflow-hidden">
+      <div className="text-2xl font-semibold mb-4">About</div>
+      <div className="w-full pt-12 p-4">
+        <div className="grid gap-14 md:grid-cols-2 md:gap-15">
           {cardData.map((card, index) => (
             <EduCard
               key={index}
@@ -36,11 +33,9 @@ const About = () => {
             />
           ))}
         </div>
-
       </div>
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

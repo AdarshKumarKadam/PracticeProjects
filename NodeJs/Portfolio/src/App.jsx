@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast"
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
@@ -14,6 +15,7 @@ const App = () => {
         <Contact/>
         <Footer/>
       </div>
+      <Toaster></Toaster>
     </>
   )
 }

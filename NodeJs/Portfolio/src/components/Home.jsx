@@ -11,7 +11,7 @@ import DevPic from "../assets/dev.png"
 const Home = () => {
   return (
     <>
-      <div className='max-w-screen-2xl container pb-0 pt-20 pb-10 mx-auto px-4 md:px-20 overflow-hidden'>
+      <div id='home' className='max-w-screen-2xl container pb-10 pt-20 pb-10 mx-auto px-4 md:px-20 overflow-hidden'>
         <div className='flex flex-col md:flex-row'>
           <div name="left" className=" md:w-1/2 order-2 md:order-1  md:mt-20 text-sm">
             <span className="text-xl block">Welcome to my feed</span>
@@ -27,9 +27,9 @@ const Home = () => {
             </div>
             <br />
             <p className="text-sm md:text-md text-justify">
-              I have studied at CDAC ACTS, Pune. I'm familiar with different technologies including Java, JavaScript, NodeJs, and ExpressJs.
-              I have completed various projects such as an Online Book Store where we used Java Spring Boot and MySQL Database for the backend and React with Axios for the frontend development.
-              Currently, I am working on General POS software with the MERN stack.
+            I have studied at CDAC ACTS, Pune, where I gained proficiency in various technologies including Java, JavaScript, Node.js, and Express.js.
+I have completed several projects, such as an Online Book Store utilizing Java Spring Boot and MySQL for the backend, and React with Axios for the frontend.
+Currently, I am working on developing General POS software using the MERN stack.
             </p>
             <br />
             {/* Social Media Icons */}

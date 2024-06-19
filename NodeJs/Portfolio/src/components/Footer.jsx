@@ -27,7 +27,7 @@ function Footer() {
         &copy; 2024 cool. All rights reserved.
       </p>
       <p className="text-sm mt-3">
-        Supportive partner ❤️ Adarsh
+        Created by ❤️ Adarsh
       </p>
     </div>
   </div>

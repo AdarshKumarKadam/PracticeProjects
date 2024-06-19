@@ -14,7 +14,7 @@ const Contact = () => {
     } = useForm();
 
     const onSubmit = async (data) => {
-        setIsSubmitting(true); // Disable the button immediately
+        setIsSubmitting(true); 
         const userInfo = {
             name: data.name,
             email: data.email,
@@ -33,7 +33,7 @@ const Contact = () => {
             console.error('Error submitting form:', error);
             toast.error('Message not sent, error in submitting form');
         } finally {
-            setIsSubmitting(false); // Re-enable the button after submission
+            setIsSubmitting(false); 
         }
     };
 

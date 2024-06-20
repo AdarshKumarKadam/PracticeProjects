@@ -60,7 +60,7 @@ Currently, I am working on developing General POS software using the MERN stack.
             </div>
           </div>
           <div name="right" className="md:w-1/2 order-1">
-            <img src={DevPic} className="md:ml-16" alt="" />
+            <img src={DevPic} className="md:ml-16" alt="profile" />
           </div>
         </div>
       </div>

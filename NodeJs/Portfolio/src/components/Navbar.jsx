@@ -11,7 +11,6 @@ const Navbar = () => {
     { id: 2, text: "About" },
     { id: 3, text: "Portfolio" },
     { id: 4, text: "Contact" },
-
   ];
 
   const navbarHeight = 68; 

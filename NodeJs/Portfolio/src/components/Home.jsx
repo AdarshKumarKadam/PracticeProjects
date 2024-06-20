@@ -11,7 +11,7 @@ import DevPic from "../assets/dev.png"
 const Home = () => {
   return (
     <>
-      <div id='home' className='max-w-screen-2xl container pb-10 pt-20 pb-10 mx-auto px-4 md:px-20 overflow-hidden'>
+      <div id='home' className='max-w-screen-2xl container  pt-20 pb-10 mx-auto px-4 md:px-20 overflow-hidden'>
         <div className='flex flex-col md:flex-row'>
           <div name="left" className=" md:w-1/2 order-2 md:order-1  md:mt-20 text-sm">
             <span className="text-xl block">Welcome to my feed</span>

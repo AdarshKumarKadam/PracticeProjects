@@ -1,5 +1,3 @@
-# React + Vite
-
 # Adarsh K. Portfolio
 
 Welcome to my portfolio project, created using React and Tailwind CSS. This portfolio showcases my skills, projects, and experience. It's built with various React features and libraries to enhance functionality and user experience.
@@ -46,11 +44,11 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/AdarshKumarKadam/PracticeProjects.git
    
 2. Navigate to the project directory
    
-   cd portfolio
+   cd NodeJs/portfolio
 
 3. Install the dependencies:
 

@@ -64,7 +64,7 @@ Make sure you have the following installed on your machine:
 
 This will start the development server and you can view the project in your browser at http://localhost:3000.
 
-### Dependencies
+## Dependencies
 axios: ^1.7.2
 dotenv: ^16.4.5
 react: ^18.2.0
@@ -76,7 +76,7 @@ react-scroll: ^1.9.0
 react-typed: ^2.0.12
 
 
-### DevDependencies
+## DevDependencies
 
 @types/react: ^18.2.66
 @types/react-dom: ^18.2.22
@@ -91,7 +91,7 @@ tailwindcss: ^3.4.4
 vite: ^5.2.0
 
 
-### Deployment
+## Deployment
 
 This project is deployed on Netlify. To deploy your own version:
 

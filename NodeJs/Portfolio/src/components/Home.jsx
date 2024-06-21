@@ -33,7 +33,7 @@ Currently, I am working on developing General POS software using the MERN stack.
             </p>
             <br />
             {/* Social Media Icons */}
-            <div className="flex flex-col md:flex-row justify-between mt-4  items-center space-y-6 md:space-y-0">
+            <div className="flex flex-col md:flex-row justify-between mt-5  items-center space-y-6 md:space-y-0">
               <div>
                 <p className="text-md text-center md:text-left">Available on</p>
                 <div className="flex space-x-5 cursor-pointer text-2xl mt-3 md:mt-3">

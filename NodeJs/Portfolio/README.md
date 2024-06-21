@@ -47,17 +47,18 @@ Make sure you have the following installed on your machine:
    git clone https://github.com/AdarshKumarKadam/PracticeProjects.git
    
 2. Navigate to the project directory
-   
+      
+   ```bash
    cd NodeJs/portfolio
 
 3. Install the dependencies:
-
+   
   ```bash
   npm install
 
 ### Running the Project
 
-  To start the development server:
+  1.To start the development server:
 
   ```bash
   npm run dev
